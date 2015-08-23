@@ -1,6 +1,6 @@
 # Meteor BootstrapToggle v2.2.1
 
-Meteor client-side component that maps a `BoostrapToggle` (`v2.2.1`) to a Session var. The binding is bi-directionnal, so if the `Session` var is updated, the component will change, and if the component is clicked, the `Session` var will ger updated.
+Meteor client-side component that maps a `BoostrapToggle` (`v2.2.1`) to a `Session` var. The binding is bi-directionnal, so if the `Session` var is updated, the component will change, and if the component is clicked, the `Session` var will get updated as well.
 
 ## Usage
 
@@ -25,7 +25,7 @@ Meteor client-side component that maps a `BoostrapToggle` (`v2.2.1`) to a Sessio
             "toggle_B_options": function(){
                 return {
                     "onstyle" : "success",
-                    "offstyle": "danger",
+                    "offstyle": "danger"
                 };
             }
         });
