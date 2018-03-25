@@ -1,8 +1,8 @@
-Template.BootstrapToggle.rendered = function() {
+Template.BootstrapToggle.onRendered(function onBootstrapToggleRendered() {
 	
 	var options = this.data.options || {};
 	var sv = this.data.var;
-	var input = this.find("input[type=checkbox][data-toggle^=toggle]");
+	var input = this.find("input[type=checkbox][data-toggle^=customToggle]");
 	var $input = $(input).bootstrapToggle(options);
 	
 	$input.change(function(e){
@@ -21,4 +21,4 @@ Template.BootstrapToggle.rendered = function() {
 		}
 	});
 
-};
+});
